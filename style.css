@@ -1,0 +1,17 @@
+/* 
+ * whenever we add the padding in any of the body html element, which try to stretch the page
+ 
+ * let's say that you had a page that was 100 percent of the view ports width and if you added padding to something, it would make that more than one hundred percent.
+ 
+ * finally it would make more than 100% and it would force a horizontal scrollbar.
+ 
+ * Box-sizing prevents padding from adding extra width or extra height of the page.
+ */
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-width: 100vh;
+}
